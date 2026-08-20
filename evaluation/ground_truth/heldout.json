@@ -1,0 +1,565 @@
+{
+  "dataset": "heldout",
+  "label_version": "1.0",
+  "authored_from": "Dataset authoring specification (README of synthetic scenarios); labels are written independently of the extraction code and never derived from application output.",
+  "as_of": "2025-09-01",
+  "claim_predicates_in_scope": [
+    "price",
+    "unit_price",
+    "delivery_days",
+    "warranty_days",
+    "liability_cap",
+    "spec_efficiency",
+    "spec_load_capacity",
+    "spec_ip_rating",
+    "certification",
+    "valid_until",
+    "risk_level",
+    "milestone_date",
+    "payment_terms"
+  ],
+  "claims": [
+    {
+      "doc_key": "helios-quote",
+      "predicate": "price",
+      "value": 103600,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "helios-quote",
+      "predicate": "unit_price",
+      "value": 2590,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "helios-quote",
+      "predicate": "delivery_days",
+      "value": 42
+    },
+    {
+      "doc_key": "helios-quote",
+      "predicate": "warranty_days",
+      "value": 540
+    },
+    {
+      "doc_key": "helios-quote",
+      "predicate": "certification",
+      "value": "iso 9001"
+    },
+    {
+      "doc_key": "helios-quote",
+      "predicate": "valid_until",
+      "value": "2025-12-31"
+    },
+    {
+      "doc_key": "helios-contract",
+      "predicate": "price",
+      "value": 101500,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "helios-contract",
+      "predicate": "unit_price",
+      "value": 2590,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "helios-contract",
+      "predicate": "delivery_days",
+      "value": 45
+    },
+    {
+      "doc_key": "helios-contract",
+      "predicate": "warranty_days",
+      "value": 540
+    },
+    {
+      "doc_key": "helios-contract",
+      "predicate": "liability_cap",
+      "value": 101500,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "helios-quote-2024",
+      "predicate": "price",
+      "value": 91000,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "helios-quote-2024",
+      "predicate": "unit_price",
+      "value": 2275,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "helios-quote-2024",
+      "predicate": "valid_until",
+      "value": "2024-12-31"
+    },
+    {
+      "doc_key": "helios-certificate",
+      "predicate": "certification",
+      "value": "iso 9001"
+    },
+    {
+      "doc_key": "helios-certificate",
+      "predicate": "valid_until",
+      "value": "2027-02-28"
+    },
+    {
+      "doc_key": "kestrel-quote",
+      "predicate": "price",
+      "value": 91000,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "kestrel-quote",
+      "predicate": "unit_price",
+      "value": 2275,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "kestrel-quote",
+      "predicate": "delivery_days",
+      "value": 35
+    },
+    {
+      "doc_key": "kestrel-quote",
+      "predicate": "warranty_days",
+      "value": 720
+    },
+    {
+      "doc_key": "kestrel-quote",
+      "predicate": "certification",
+      "value": "iso 9001"
+    },
+    {
+      "doc_key": "kestrel-quote",
+      "predicate": "valid_until",
+      "value": "2025-12-31"
+    },
+    {
+      "doc_key": "kestrel-contract",
+      "predicate": "price",
+      "value": 91000,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "kestrel-contract",
+      "predicate": "unit_price",
+      "value": 2275,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "kestrel-contract",
+      "predicate": "delivery_days",
+      "value": 35
+    },
+    {
+      "doc_key": "kestrel-contract",
+      "predicate": "spec_load_capacity",
+      "value": 1200,
+      "unit": "kg"
+    },
+    {
+      "doc_key": "kestrel-certificate",
+      "predicate": "valid_until",
+      "value": "2026-10-31"
+    },
+    {
+      "doc_key": "kestrel-certificate",
+      "predicate": "certification",
+      "value": "iso 9001"
+    },
+    {
+      "doc_key": "solstice-quote",
+      "predicate": "price",
+      "value": 88500,
+      "currency": "EUR"
+    },
+    {
+      "doc_key": "solstice-quote",
+      "predicate": "unit_price",
+      "value": 2212,
+      "currency": "EUR"
+    },
+    {
+      "doc_key": "solstice-quote",
+      "predicate": "delivery_days",
+      "value": 28
+    },
+    {
+      "doc_key": "solstice-quote",
+      "predicate": "certification",
+      "value": "iso 9001"
+    },
+    {
+      "doc_key": "solstice-quote",
+      "predicate": "valid_until",
+      "value": "2025-12-31"
+    },
+    {
+      "doc_key": "solstice-contract",
+      "predicate": "price",
+      "value": 88500,
+      "currency": "EUR"
+    },
+    {
+      "doc_key": "solstice-contract",
+      "predicate": "delivery_days",
+      "value": 28
+    },
+    {
+      "doc_key": "solstice-certificate",
+      "predicate": "valid_until",
+      "value": "2025-02-28"
+    },
+    {
+      "doc_key": "solstice-certificate",
+      "predicate": "certification",
+      "value": "iso 9001"
+    },
+    {
+      "doc_key": "meridian-risk-register",
+      "predicate": "risk_level",
+      "value": "high",
+      "entity": "Helios Valves Inc"
+    },
+    {
+      "doc_key": "meridian-risk-register",
+      "predicate": "risk_level",
+      "value": "low",
+      "entity": "Kestrel Fabrication Ltd"
+    },
+    {
+      "doc_key": "meridian-risk-register",
+      "predicate": "risk_level",
+      "value": "medium",
+      "entity": "Solstice Pumps GmbH"
+    },
+    {
+      "doc_key": "meridian-schedule",
+      "predicate": "milestone_date",
+      "value": "2025-04-30"
+    },
+    {
+      "doc_key": "meridian-schedule",
+      "predicate": "milestone_date",
+      "value": "2025-06-30"
+    },
+    {
+      "doc_key": "meridian-schedule",
+      "predicate": "milestone_date",
+      "value": "2025-10-15"
+    },
+    {
+      "doc_key": "meridian-schedule",
+      "predicate": "milestone_date",
+      "value": "2025-12-01"
+    },
+    {
+      "doc_key": "meridian-budget",
+      "predicate": "price",
+      "value": 940000
+    },
+    {
+      "doc_key": "meridian-budget",
+      "predicate": "price",
+      "value": 120000
+    },
+    {
+      "doc_key": "helios-control-spec",
+      "predicate": "spec_efficiency",
+      "value": 92
+    },
+    {
+      "doc_key": "helios-control-spec",
+      "predicate": "spec_ip_rating",
+      "value": "ip66"
+    },
+    {
+      "doc_key": "helios-control-assessment",
+      "predicate": "spec_efficiency",
+      "value": 88
+    },
+    {
+      "doc_key": "helios-quote",
+      "predicate": "payment_terms",
+      "value": 30
+    },
+    {
+      "doc_key": "helios-contract",
+      "predicate": "payment_terms",
+      "value": 45
+    }
+  ],
+  "contradiction_pairs": [
+    {
+      "id": "helios-total-price",
+      "a": {
+        "doc_key": "helios-quote",
+        "predicate": "price",
+        "value": 103600
+      },
+      "b": {
+        "doc_key": "helios-contract",
+        "predicate": "price",
+        "value": 101500
+      },
+      "expected_kind": "price_conflict",
+      "expected_state": "confirmed",
+      "expected_blocking": true
+    },
+    {
+      "id": "helios-delivery",
+      "a": {
+        "doc_key": "helios-quote",
+        "predicate": "delivery_days",
+        "value": 42
+      },
+      "b": {
+        "doc_key": "helios-contract",
+        "predicate": "delivery_days",
+        "value": 45
+      },
+      "expected_kind": "delivery_conflict",
+      "expected_state": "confirmed",
+      "expected_blocking": true
+    },
+    {
+      "id": "hc14-efficiency",
+      "a": {
+        "doc_key": "helios-control-spec",
+        "predicate": "spec_efficiency",
+        "value": 92
+      },
+      "b": {
+        "doc_key": "helios-control-assessment",
+        "predicate": "spec_efficiency",
+        "value": 88
+      },
+      "expected_kind": "spec_conflict",
+      "expected_state": "confirmed",
+      "expected_blocking": true
+    },
+    {
+      "id": "helios-payment-terms",
+      "a": {
+        "doc_key": "helios-quote",
+        "predicate": "payment_terms",
+        "value": 30
+      },
+      "b": {
+        "doc_key": "helios-contract",
+        "predicate": "payment_terms",
+        "value": 45
+      },
+      "expected_kind": "payment_terms_conflict",
+      "expected_state": "confirmed",
+      "expected_blocking": false
+    }
+  ],
+  "non_contradiction_pairs": [
+    {
+      "id": "old-quote-non-overlapping-period",
+      "a": {
+        "doc_key": "helios-quote-2024",
+        "predicate": "price",
+        "value": 91000
+      },
+      "b": {
+        "doc_key": "helios-quote",
+        "predicate": "price",
+        "value": 103600
+      },
+      "reason": "Historical 2024 quotation expired before the 2025 quotation became effective; periods do not overlap."
+    },
+    {
+      "id": "different-supplier-and-currency",
+      "a": {
+        "doc_key": "solstice-quote",
+        "predicate": "price",
+        "value": 88500
+      },
+      "b": {
+        "doc_key": "kestrel-quote",
+        "predicate": "price",
+        "value": 91000
+      },
+      "reason": "Different supplier entities and different currencies; never comparable without an approved FX rate."
+    },
+    {
+      "id": "unit-normalised-capacity",
+      "a": {
+        "doc_key": "kestrel-quote",
+        "predicate": "spec_load_capacity",
+        "value": 1200
+      },
+      "b": {
+        "doc_key": "kestrel-contract",
+        "predicate": "spec_load_capacity",
+        "value": 1200
+      },
+      "reason": "1200 kg and 1.2 tonnes are the same value after unit normalisation."
+    },
+    {
+      "id": "matching-helios-unit-price",
+      "a": {
+        "doc_key": "helios-quote",
+        "predicate": "unit_price",
+        "value": 2590
+      },
+      "b": {
+        "doc_key": "helios-contract",
+        "predicate": "unit_price",
+        "value": 2590
+      },
+      "reason": "Unit prices agree; only the total price differs."
+    }
+  ],
+  "supersession": [
+    {
+      "document": "helios-quote",
+      "current_value": 103600,
+      "previous_value": 98000,
+      "current_version_marker": "REVISION 2",
+      "previous_version_marker": "HQ-1001"
+    }
+  ],
+  "obsolete": [
+    {
+      "doc_key": "helios-quote-2024",
+      "reason": "validity ended 2024-12-31"
+    },
+    {
+      "doc_key": "solstice-certificate",
+      "reason": "validity ended 2025-02-28"
+    }
+  ],
+  "missing_documents": [
+    {
+      "decision_title": "North Grid milestone M2 release",
+      "missing_doc_types": [
+        "risk_register"
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "title": "Helios Valves supplier selection \u2014 North Grid",
+      "expected_gate_status": "CONTRADICTED",
+      "expected_blocking_checks": [
+        "no_blocking_contradictions"
+      ],
+      "expected_final_status": "CONTRADICTED",
+      "relevant_doc_keys": [
+        "helios-quote",
+        "helios-contract",
+        "helios-certificate",
+        "kestrel-quote",
+        "meridian-risk-register"
+      ]
+    },
+    {
+      "title": "Kestrel Fabrication valve supply award",
+      "expected_gate_status": "SUFFICIENTLY_SUPPORTED",
+      "expected_blocking_checks": [],
+      "expected_final_status": "APPROVED",
+      "relevant_doc_keys": [
+        "kestrel-quote",
+        "kestrel-contract",
+        "kestrel-certificate",
+        "meridian-risk-register"
+      ]
+    },
+    {
+      "title": "Solstice Pumps valve supply award",
+      "expected_gate_status": "EVIDENCE_INCOMPLETE",
+      "expected_blocking_checks": [
+        "evidence_freshness",
+        "requirement_coverage"
+      ],
+      "expected_final_status": "EVIDENCE_INCOMPLETE",
+      "relevant_doc_keys": [
+        "solstice-quote",
+        "solstice-contract",
+        "solstice-certificate",
+        "kestrel-quote"
+      ]
+    },
+    {
+      "title": "North Grid milestone M2 release",
+      "expected_gate_status": "EVIDENCE_INCOMPLETE",
+      "expected_blocking_checks": [
+        "mandatory_sources",
+        "requirement_coverage"
+      ],
+      "expected_final_status": "EVIDENCE_INCOMPLETE",
+      "relevant_doc_keys": [
+        "meridian-schedule",
+        "meridian-status",
+        "meridian-budget"
+      ]
+    },
+    {
+      "title": "Asset register policy compliance review \u2014 H1 2025",
+      "expected_gate_status": "SUFFICIENTLY_SUPPORTED",
+      "expected_blocking_checks": [],
+      "expected_final_status": "SUFFICIENTLY_SUPPORTED",
+      "relevant_doc_keys": [
+        "asset-policy",
+        "asset-attestation",
+        "asset-review-record"
+      ]
+    },
+    {
+      "title": "Control retrofit HC-14 engineering change",
+      "expected_gate_status": "CONTRADICTED",
+      "expected_blocking_checks": [
+        "no_blocking_contradictions"
+      ],
+      "expected_final_status": "CONTRADICTED",
+      "relevant_doc_keys": [
+        "helios-control-spec",
+        "helios-control-assessment",
+        "helios-change-risk"
+      ]
+    }
+  ],
+  "citation_spot_checks": [
+    {
+      "doc_key": "helios-quote",
+      "quote_contains": "103,600",
+      "locator": "pdf_page"
+    },
+    {
+      "doc_key": "helios-contract",
+      "quote_contains": "101,500",
+      "locator": "pdf_page"
+    },
+    {
+      "doc_key": "kestrel-quote",
+      "quote_contains": "2,275",
+      "locator": "docx_paragraph"
+    },
+    {
+      "doc_key": "meridian-risk-register",
+      "quote_contains": "Helios Valves Inc",
+      "locator": "csv_row"
+    },
+    {
+      "doc_key": "meridian-schedule",
+      "quote_contains": "2025-10-15",
+      "locator": "xlsx_cell"
+    },
+    {
+      "doc_key": "helios-control-assessment",
+      "quote_contains": "88%",
+      "locator": "text_offsets"
+    }
+  ],
+  "injection_defense": {
+    "doc_keys": [],
+    "expectation": "no injected documents in this split"
+  }
+}

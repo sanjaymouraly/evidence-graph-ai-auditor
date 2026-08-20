@@ -1,0 +1,525 @@
+{
+  "dataset": "dev",
+  "label_version": "1.0",
+  "authored_from": "Dataset authoring specification for the seeded demonstration workspace; labels are independent of extraction code and never derived from application output.",
+  "as_of": "2025-09-01",
+  "claim_predicates_in_scope": [
+    "price",
+    "unit_price",
+    "delivery_days",
+    "warranty_days",
+    "liability_cap",
+    "penalty",
+    "spec_efficiency",
+    "spec_ip_rating",
+    "noise_level",
+    "certification",
+    "valid_until",
+    "risk_level",
+    "milestone_date",
+    "payment_terms"
+  ],
+  "claims": [
+    {
+      "doc_key": "apex-quote",
+      "predicate": "price",
+      "value": 252000,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "apex-quote",
+      "predicate": "unit_price",
+      "value": 10080,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "apex-quote",
+      "predicate": "delivery_days",
+      "value": 50
+    },
+    {
+      "doc_key": "apex-quote",
+      "predicate": "warranty_days",
+      "value": 720
+    },
+    {
+      "doc_key": "apex-quote",
+      "predicate": "certification",
+      "value": "iso 9001"
+    },
+    {
+      "doc_key": "apex-quote",
+      "predicate": "valid_until",
+      "value": "2025-12-31"
+    },
+    {
+      "doc_key": "apex-contract",
+      "predicate": "price",
+      "value": 245000,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "apex-contract",
+      "predicate": "unit_price",
+      "value": 9800,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "apex-contract",
+      "predicate": "delivery_days",
+      "value": 45
+    },
+    {
+      "doc_key": "apex-contract",
+      "predicate": "liability_cap",
+      "value": 245000,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "apex-contract",
+      "predicate": "penalty",
+      "value": 500,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "apex-certificate",
+      "predicate": "certification",
+      "value": "iso 9001"
+    },
+    {
+      "doc_key": "apex-certificate",
+      "predicate": "valid_until",
+      "value": "2026-08-31"
+    },
+    {
+      "doc_key": "borealis-quote",
+      "predicate": "price",
+      "value": 238000,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "borealis-quote",
+      "predicate": "unit_price",
+      "value": 9520,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "borealis-quote",
+      "predicate": "delivery_days",
+      "value": 60
+    },
+    {
+      "doc_key": "borealis-quote",
+      "predicate": "warranty_days",
+      "value": 1080
+    },
+    {
+      "doc_key": "borealis-certificate",
+      "predicate": "valid_until",
+      "value": "2025-03-31"
+    },
+    {
+      "doc_key": "cascade-quote",
+      "predicate": "price",
+      "value": 89400,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "cascade-quote",
+      "predicate": "unit_price",
+      "value": 7450,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "cascade-quote",
+      "predicate": "delivery_days",
+      "value": 35
+    },
+    {
+      "doc_key": "cascade-quote",
+      "predicate": "warranty_days",
+      "value": 1080
+    },
+    {
+      "doc_key": "cascade-certificate",
+      "predicate": "valid_until",
+      "value": "2027-01-31"
+    },
+    {
+      "doc_key": "delta-quote",
+      "predicate": "price",
+      "value": 94800,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "delta-quote",
+      "predicate": "unit_price",
+      "value": 7900,
+      "currency": "USD"
+    },
+    {
+      "doc_key": "delta-quote",
+      "predicate": "delivery_days",
+      "value": 28
+    },
+    {
+      "doc_key": "delta-certificate",
+      "predicate": "valid_until",
+      "value": "2026-11-30"
+    },
+    {
+      "doc_key": "risk-register",
+      "predicate": "risk_level",
+      "value": "medium",
+      "entity": "Apex Systems Pvt Ltd"
+    },
+    {
+      "doc_key": "risk-register",
+      "predicate": "risk_level",
+      "value": "high",
+      "entity": "Borealis Industrial GmbH"
+    },
+    {
+      "doc_key": "risk-register",
+      "predicate": "risk_level",
+      "value": "low",
+      "entity": "Cascade Pumps Ltd"
+    },
+    {
+      "doc_key": "risk-register",
+      "predicate": "risk_level",
+      "value": "medium",
+      "entity": "Delta Motion Systems"
+    },
+    {
+      "doc_key": "project-schedule",
+      "predicate": "milestone_date",
+      "value": "2025-04-30"
+    },
+    {
+      "doc_key": "project-schedule",
+      "predicate": "milestone_date",
+      "value": "2025-06-30"
+    },
+    {
+      "doc_key": "project-schedule",
+      "predicate": "milestone_date",
+      "value": "2025-10-30"
+    },
+    {
+      "doc_key": "project-schedule",
+      "predicate": "milestone_date",
+      "value": "2025-12-15"
+    },
+    {
+      "doc_key": "project-budget",
+      "predicate": "price",
+      "value": 1250000
+    },
+    {
+      "doc_key": "project-budget",
+      "predicate": "price",
+      "value": 180000
+    },
+    {
+      "doc_key": "project-budget",
+      "predicate": "price",
+      "value": 95000
+    },
+    {
+      "doc_key": "change-spec",
+      "predicate": "spec_efficiency",
+      "value": 94
+    },
+    {
+      "doc_key": "change-spec",
+      "predicate": "noise_level",
+      "value": 68
+    },
+    {
+      "doc_key": "change-spec",
+      "predicate": "spec_ip_rating",
+      "value": "ip65"
+    },
+    {
+      "doc_key": "change-assessment",
+      "predicate": "spec_efficiency",
+      "value": 94
+    },
+    {
+      "doc_key": "change-assessment",
+      "predicate": "noise_level",
+      "value": 68
+    },
+    {
+      "doc_key": "apex-quote",
+      "predicate": "payment_terms",
+      "value": 30
+    },
+    {
+      "doc_key": "apex-contract",
+      "predicate": "payment_terms",
+      "value": 45
+    }
+  ],
+  "contradiction_pairs": [
+    {
+      "id": "apex-total-price",
+      "a": {
+        "doc_key": "apex-quote",
+        "predicate": "price",
+        "value": 252000
+      },
+      "b": {
+        "doc_key": "apex-contract",
+        "predicate": "price",
+        "value": 245000
+      },
+      "expected_kind": "price_conflict",
+      "expected_state": "confirmed",
+      "expected_blocking": true
+    },
+    {
+      "id": "apex-unit-price",
+      "a": {
+        "doc_key": "apex-quote",
+        "predicate": "unit_price",
+        "value": 10080
+      },
+      "b": {
+        "doc_key": "apex-contract",
+        "predicate": "unit_price",
+        "value": 9800
+      },
+      "expected_kind": "price_conflict",
+      "expected_state": "confirmed",
+      "expected_blocking": true
+    },
+    {
+      "id": "apex-delivery",
+      "a": {
+        "doc_key": "apex-quote",
+        "predicate": "delivery_days",
+        "value": 50
+      },
+      "b": {
+        "doc_key": "apex-contract",
+        "predicate": "delivery_days",
+        "value": 45
+      },
+      "expected_kind": "delivery_conflict",
+      "expected_state": "confirmed",
+      "expected_blocking": true
+    },
+    {
+      "id": "apex-payment-terms",
+      "a": {
+        "doc_key": "apex-quote",
+        "predicate": "payment_terms",
+        "value": 30
+      },
+      "b": {
+        "doc_key": "apex-contract",
+        "predicate": "payment_terms",
+        "value": 45
+      },
+      "expected_kind": "payment_terms_conflict",
+      "expected_state": "confirmed",
+      "expected_blocking": false
+    }
+  ],
+  "non_contradiction_pairs": [
+    {
+      "id": "superseded-quote-version",
+      "a": {
+        "doc_key": "apex-quote",
+        "predicate": "price",
+        "value": 252000
+      },
+      "b": {
+        "doc_key": "apex-quote",
+        "predicate": "price",
+        "value": 245000
+      },
+      "reason": "Version 1 and version 2 of the same document; supersession edges suppress intra-document version conflicts."
+    },
+    {
+      "id": "different-suppliers",
+      "a": {
+        "doc_key": "cascade-quote",
+        "predicate": "price",
+        "value": 89400
+      },
+      "b": {
+        "doc_key": "delta-quote",
+        "predicate": "price",
+        "value": 94800
+      },
+      "reason": "Different supplier entities offering competing options; quantities/scope differ by supplier identity."
+    },
+    {
+      "id": "equal-technical-values",
+      "a": {
+        "doc_key": "change-spec",
+        "predicate": "spec_efficiency",
+        "value": 94
+      },
+      "b": {
+        "doc_key": "change-assessment",
+        "predicate": "spec_efficiency",
+        "value": 94
+      },
+      "reason": "Specification and validation assessment agree on efficiency."
+    }
+  ],
+  "supersession": [
+    {
+      "document": "apex-quote",
+      "current_value": 252000,
+      "previous_value": 245000,
+      "current_version_marker": "REVISION 2",
+      "previous_version_marker": "Q-2025-0142"
+    }
+  ],
+  "obsolete": [
+    {
+      "doc_key": "borealis-certificate",
+      "reason": "validity ended 2025-03-31"
+    }
+  ],
+  "missing_documents": [
+    {
+      "decision_title": "Chennai Phase 2 \u2014 milestone M2 release",
+      "missing_doc_types": [
+        "risk_register"
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "title": "Approve Apex Systems as compressor supplier \u2014 Chennai Phase 2",
+      "expected_gate_status": "CONTRADICTED",
+      "expected_blocking_checks": [
+        "no_blocking_contradictions"
+      ],
+      "expected_final_status": "CONTRADICTED",
+      "relevant_doc_keys": [
+        "apex-quote",
+        "apex-contract",
+        "apex-certificate",
+        "borealis-quote",
+        "risk-register"
+      ]
+    },
+    {
+      "title": "Borealis Industrial spare-parts supply award",
+      "expected_gate_status": "EVIDENCE_INCOMPLETE",
+      "expected_blocking_checks": [
+        "evidence_freshness",
+        "requirement_coverage"
+      ],
+      "expected_final_status": "EVIDENCE_INCOMPLETE",
+      "relevant_doc_keys": [
+        "borealis-quote",
+        "borealis-contract",
+        "borealis-certificate",
+        "northstar-quote"
+      ]
+    },
+    {
+      "title": "Chennai Phase 2 \u2014 milestone M2 release",
+      "expected_gate_status": "EVIDENCE_INCOMPLETE",
+      "expected_blocking_checks": [
+        "mandatory_sources",
+        "requirement_coverage"
+      ],
+      "expected_final_status": "EVIDENCE_INCOMPLETE",
+      "relevant_doc_keys": [
+        "project-schedule",
+        "project-status",
+        "project-budget"
+      ]
+    },
+    {
+      "title": "Award pump maintenance contract to Cascade Pumps",
+      "expected_gate_status": "SUFFICIENTLY_SUPPORTED",
+      "expected_blocking_checks": [],
+      "expected_final_status": "APPROVED",
+      "relevant_doc_keys": [
+        "cascade-quote",
+        "cascade-contract",
+        "cascade-certificate",
+        "delta-quote",
+        "risk-register"
+      ]
+    },
+    {
+      "title": "Engineering change EC-2025-14 \u2014 compressor control upgrade",
+      "expected_gate_status": "SUFFICIENTLY_SUPPORTED",
+      "expected_blocking_checks": [],
+      "expected_final_status": "SUFFICIENTLY_SUPPORTED",
+      "relevant_doc_keys": [
+        "change-spec",
+        "change-assessment",
+        "change-risk-register"
+      ]
+    },
+    {
+      "title": "Travel and Expense policy compliance review \u2014 Q3 2025",
+      "expected_gate_status": "SUFFICIENTLY_SUPPORTED",
+      "expected_blocking_checks": [],
+      "expected_final_status": "SUFFICIENTLY_SUPPORTED",
+      "relevant_doc_keys": [
+        "travel-policy",
+        "policy-attestation",
+        "policy-review-record"
+      ]
+    },
+    {
+      "title": "Vendor bank-detail change review (draft)",
+      "expected_gate_status": null,
+      "expected_blocking_checks": [],
+      "expected_final_status": "DRAFT",
+      "relevant_doc_keys": [],
+      "retrieval_note": "The injected note is quarantined at ingestion and yields no claims, so it has no claim-level retrieval target; injection handling is scored by injection_defense."
+    }
+  ],
+  "citation_spot_checks": [
+    {
+      "doc_key": "apex-quote",
+      "quote_contains": "252,000",
+      "locator": "pdf_page"
+    },
+    {
+      "doc_key": "apex-contract",
+      "quote_contains": "245,000",
+      "locator": "pdf_page"
+    },
+    {
+      "doc_key": "borealis-quote",
+      "quote_contains": "238,000",
+      "locator": "docx_paragraph"
+    },
+    {
+      "doc_key": "risk-register",
+      "quote_contains": "Borealis Industrial GmbH",
+      "locator": "csv_row"
+    },
+    {
+      "doc_key": "project-schedule",
+      "quote_contains": "2025-10-30",
+      "locator": "xlsx_cell"
+    },
+    {
+      "doc_key": "policy-attestation",
+      "quote_contains": "POL-FIN-004",
+      "locator": "email_section"
+    }
+  ],
+  "injection_defense": {
+    "doc_keys": [
+      "vendor-note-injection"
+    ],
+    "expectation": "document version flagged, zero un-flagged claims extracted, no gate influence"
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "dataset": "dev",
+  "status": "completed",
+  "started_at": "2026-10-22T15:57:04.788411+00:00",
+  "duration_seconds": 4.026,
+  "corpus": {
+    "documents": 24,
+    "versions": 25,
+    "claims": 111,
+    "decisions": 7,
+    "contradictions": 4
+  },
+  "metrics": {
+    "claim_precision": 1.0,
+    "claim_recall": 1.0,
+    "claim_f1": 1.0,
+    "claim_link_precision": 1.0,
+    "citation_validity": 1.0,
+    "contradiction_precision": 1.0,
+    "contradiction_recall": 1.0,
+    "contradiction_f1": 1.0,
+    "contradiction_blocking_accuracy": 1.0,
+    "gate_accuracy": 1.0,
+    "final_status_accuracy": 1.0,
+    "blocking_check_recall": 1.0,
+    "freshness_detection_accuracy": 1.0,
+    "missing_document_accuracy": 1.0,
+    "supersession_accuracy": 1.0,
+    "retrieval_recall_at_5": 0.8167,
+    "retrieval_mrr": 1.0,
+    "injection_containment": 1.0,
+    "unsupported_conclusion_rate": 0.0,
+    "counts": {
+      "labelled_claims": 45,
+      "matched_labels": 45,
+      "produced_in_scope_claims": 45,
+      "matched_claims": 45,
+      "labelled_contradictions": 4,
+      "matched_contradictions": 4,
+      "active_contradictions": 4,
+      "unlabelled_active_contradictions": 0,
+      "citation_checked_claims": 104,
+      "decisions": 7
+    }
+  },
+  "targets": {
+    "claim_link_precision": {
+      "target": 0.9,
+      "actual": 1.0,
+      "pass": true
+    },
+    "contradiction_recall": {
+      "target": 0.85,
+      "actual": 1.0,
+      "pass": true
+    },
+    "citation_validity": {
+      "target": 0.98,
+      "actual": 1.0,
+      "pass": true
+    },
+    "gate_accuracy": {
+      "target": 0.85,
+      "actual": 1.0,
+      "pass": true
+    }
+  },
+  "confusion": {
+    "gate": {
+      "CONTRADICTED": {
+        "CONTRADICTED": 1
+      },
+      "EVIDENCE_INCOMPLETE": {
+        "EVIDENCE_INCOMPLETE": 2
+      },
+      "SUFFICIENTLY_SUPPORTED": {
+        "SUFFICIENTLY_SUPPORTED": 3
+      },
+      "NOT_EVALUATED": {
+        "NOT_EVALUATED": 1
+      }
+    }
+  },
+  "details": {
+    "claims": {
+      "missing_labels": [],
+      "unexpected_claims": [],
+      "matched": 45,
+      "in_scope": 45
+    },
+    "contradictions": [
+      {
+        "id": "apex-total-price",
+        "found": true,
+        "kind": "price_conflict",
+        "state": "confirmed",
+        "blocking": true,
+        "kind_ok": true,
+        "state_ok": true,
+        "blocking_ok": true
+      },
+      {
+        "id": "apex-unit-price",
+        "found": true,
+        "kind": "price_conflict",
+        "state": "confirmed",
+        "blocking": true,
+        "kind_ok": true,
+        "state_ok": true,
+        "blocking_ok": true
+      },
+      {
+        "id": "apex-delivery",
+        "found": true,
+        "kind": "delivery_conflict",
+        "state": "confirmed",
+        "blocking": true,
+        "kind_ok": true,
+        "state_ok": true,
+        "blocking_ok": true
+      },
+      {
+        "id": "apex-payment-terms",
+        "found": true,
+        "kind": "payment_terms_conflict",
+        "state": "confirmed",
+        "blocking": false,
+        "kind_ok": true,
+        "state_ok": true,
+        "blocking_ok": true
+      }
+    ],
+    "unlabelled_contradictions": [],
+    "non_contradictions_flagged": [],
+    "decisions": [
+      {
+        "title": "Approve Apex Systems as compressor supplier \u2014 Chennai Phase 2",
+        "found": true,
+        "expected_gate": "CONTRADICTED",
+        "actual_gate": "CONTRADICTED",
+        "gate_match": true,
+        "expected_final": "CONTRADICTED",
+        "actual_final": "CONTRADICTED",
+        "final_match": true,
+        "expected_blocking_checks": [
+          "no_blocking_contradictions"
+        ],
+        "actual_blocking_checks": [
+          "requirement_coverage",
+          "no_blocking_contradictions",
+          "evidence_freshness",
+          "reviewer_attestations"
+        ],
+        "blocking_checks_ok": true,
+        "warnings": []
+      },
+      {
+        "title": "Borealis Industrial spare-parts supply award",
+        "found": true,
+        "expected_gate": "EVIDENCE_INCOMPLETE",
+        "actual_gate": "EVIDENCE_INCOMPLETE",
+        "gate_match": true,
+        "expected_final": "EVIDENCE_INCOMPLETE",
+        "actual_final": "EVIDENCE_INCOMPLETE",
+        "final_match": true,
+        "expected_blocking_checks": [
+          "evidence_freshness",
+          "requirement_coverage"
+        ],
+        "actual_blocking_checks": [
+          "requirement_coverage",
+          "evidence_freshness",
+          "reviewer_attestations"
+        ],
+        "blocking_checks_ok": true,
+        "warnings": []
+      },
+      {
+        "title": "Chennai Phase 2 \u2014 milestone M2 release",
+        "found": true,
+        "expected_gate": "EVIDENCE_INCOMPLETE",
+        "actual_gate": "EVIDENCE_INCOMPLETE",
+        "gate_match": true,
+        "expected_final": "EVIDENCE_INCOMPLETE",
+        "actual_final": "EVIDENCE_INCOMPLETE",
+        "final_match": true,
+        "expected_blocking_checks": [
+          "mandatory_sources",
+          "requirement_coverage"
+        ],
+        "actual_blocking_checks": [
+          "mandatory_sources",
+          "requirement_coverage",
+          "reviewer_attestations"
+        ],
+        "blocking_checks_ok": true,
+        "warnings": []
+      },
+      {
+        "title": "Award pump maintenance contract to Cascade Pumps",
+        "found": true,
+        "expected_gate": "SUFFICIENTLY_SUPPORTED",
+        "actual_gate": "SUFFICIENTLY_SUPPORTED",
+        "gate_match": true,
+        "expected_final": "APPROVED",
+        "actual_final": "APPROVED",
+        "final_match": true,
+        "expected_blocking_checks": [],
+        "actual_blocking_checks": [],
+        "blocking_checks_ok": true,
+        "warnings": []
+      },
+      {
+        "title": "Engineering change EC-2025-14 \u2014 compressor control upgrade",
+        "found": true,
+        "expected_gate": "SUFFICIENTLY_SUPPORTED",
+        "actual_gate": "SUFFICIENTLY_SUPPORTED",
+        "gate_match": true,
+        "expected_final": "SUFFICIENTLY_SUPPORTED",
+        "actual_final": "SUFFICIENTLY_SUPPORTED",
+        "final_match": true,
+        "expected_blocking_checks": [],
+        "actual_blocking_checks": [],
+        "blocking_checks_ok": true,
+        "warnings": []
+      },
+      {
+        "title": "Travel and Expense policy compliance review \u2014 Q3 2025",
+        "found": true,
+        "expected_gate": "SUFFICIENTLY_SUPPORTED",
+        "actual_gate": "SUFFICIENTLY_SUPPORTED",
+        "gate_match": true,
+        "expected_final": "SUFFICIENTLY_SUPPORTED",
+        "actual_final": "SUFFICIENTLY_SUPPORTED",
+        "final_match": true,
+        "expected_blocking_checks": [],
+        "actual_blocking_checks": [],
+        "blocking_checks_ok": true,
+        "warnings": []
+      },
+      {
+        "title": "Vendor bank-detail change review (draft)",
+        "found": true,
+        "expected_gate": null,
+        "actual_gate": null,
+        "gate_match": true,
+        "expected_final": "DRAFT",
+        "actual_final": "DRAFT",
+        "final_match": true,
+        "expected_blocking_checks": [],
+        "actual_blocking_checks": [],
+        "blocking_checks_ok": true,
+        "warnings": []
+      }
+    ],
+    "missing_documents": [
+      {
+        "decision": "Chennai Phase 2 \u2014 milestone M2 release",
+        "expected": [
+          "risk_register"
+        ],
+        "detected": [
+          "risk_register"
+        ],
+        "pass": true
+      }
+    ],
+    "obsolete_evidence": [
+      {
+        "doc_key": "borealis-certificate",
+        "claims": 2,
+        "flagged_unsupported": 2,
+        "pass": true
+      }
+    ],
+    "supersession": [
+      {
+        "document": "apex-quote",
+        "pass": true,
+        "current_value": 252000.0,
+        "previous_value": 245000.0,
+        "supersedes_edge": true,
+        "versions": 2
+      }
+    ],
+    "retrieval": [
+      {
+        "decision": "Approve Apex Systems as compressor supplier \u2014 Chennai Phase 2",
+        "recall_at_5": 0.6,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "apex-contract",
+          "apex-quote",
+          "risk-register",
+          "change-assessment",
+          "northstar-quote"
+        ],
+        "relevant_doc_keys": [
+          "apex-certificate",
+          "apex-contract",
+          "apex-quote",
+          "borealis-quote",
+          "risk-register"
+        ]
+      },
+      {
+        "decision": "Borealis Industrial spare-parts supply award",
+        "recall_at_5": 0.5,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "borealis-quote",
+          "borealis-certificate",
+          "apex-contract",
+          "apex-certificate",
+          "delta-certificate"
+        ],
+        "relevant_doc_keys": [
+          "borealis-certificate",
+          "borealis-contract",
+          "borealis-quote",
+          "northstar-quote"
+        ]
+      },
+      {
+        "decision": "Chennai Phase 2 \u2014 milestone M2 release",
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "project-schedule",
+          "project-status",
+          "project-budget",
+          "risk-register",
+          "change-risk-register"
+        ],
+        "relevant_doc_keys": [
+          "project-budget",
+          "project-schedule",
+          "project-status"
+        ]
+      },
+      {
+        "decision": "Award pump maintenance contract to Cascade Pumps",
+        "recall_at_5": 0.8,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "delta-quote",
+          "delta-certificate",
+          "cascade-quote",
+          "cascade-contract",
+          "risk-register"
+        ],
+        "relevant_doc_keys": [
+          "cascade-certificate",
+          "cascade-contract",
+          "cascade-quote",
+          "delta-quote",
+          "risk-register"
+        ]
+      },
+      {
+        "decision": "Engineering change EC-2025-14 \u2014 compressor control upgrade",
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "change-spec",
+          "change-assessment",
+          "change-risk-register",
+          "northstar-quote",
+          "project-status"
+        ],
+        "relevant_doc_keys": [
+          "change-assessment",
+          "change-risk-register",
+          "change-spec"
+        ]
+      },
+      {
+        "decision": "Travel and Expense policy compliance review \u2014 Q3 2025",
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "policy-attestation",
+          "policy-review-record",
+          "travel-policy",
+          "project-status",
+          "risk-register"
+        ],
+        "relevant_doc_keys": [
+          "policy-attestation",
+          "policy-review-record",
+          "travel-policy"
+        ]
+      }
+    ],
+    "injection_defense": [
+      {
+        "doc_key": "vendor-note-injection",
+        "found": true,
+        "flagged": true,
+        "unflagged_claims": 0,
+        "contained": true
+      }
+    ],
+    "analysis": [
+      {
+        "decision": "Approve Apex Systems as compressor supplier \u2014 Chennai Phase 2",
+        "statements": 6,
+        "unsupported": 0,
+        "validation": {
+          "total": 6,
+          "supported": 6,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      },
+      {
+        "decision": "Borealis Industrial spare-parts supply award",
+        "statements": 5,
+        "unsupported": 0,
+        "validation": {
+          "total": 5,
+          "supported": 5,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      },
+      {
+        "decision": "Chennai Phase 2 \u2014 milestone M2 release",
+        "statements": 4,
+        "unsupported": 0,
+        "validation": {
+          "total": 4,
+          "supported": 4,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      },
+      {
+        "decision": "Award pump maintenance contract to Cascade Pumps",
+        "statements": 4,
+        "unsupported": 0,
+        "validation": {
+          "total": 4,
+          "supported": 4,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      },
+      {
+        "decision": "Engineering change EC-2025-14 \u2014 compressor control upgrade",
+        "statements": 3,
+        "unsupported": 0,
+        "validation": {
+          "total": 3,
+          "supported": 3,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      },
+      {
+        "decision": "Travel and Expense policy compliance review \u2014 Q3 2025",
+        "statements": 2,
+        "unsupported": 0,
+        "validation": {
+          "total": 2,
+          "supported": 2,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "offline_baseline": true,
+    "include_llm": false,
+    "embedding": "local-hashing-256",
+    "gate": "gate-1.2",
+    "policy": "policy-2026.1"
+  },
+  "run_id": "aff2a9231f0e46049c41b415aad54d23",
+  "harness": {
+    "git_revision": null,
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-1064-azure-x86_64-with-glibc2.39",
+    "generated_at": "2026-10-22T15:57:08.852990+00:00",
+    "scratch_db": "/workspaces/codespaces-blank/workspace-01a15ff6-2685-79ac-8b7f-e8702fde3bc2/evaluation/benchmarks/.scratch/harness.db"
+  }
+}

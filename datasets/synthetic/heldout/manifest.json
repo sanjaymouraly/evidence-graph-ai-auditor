@@ -1,0 +1,358 @@
+{
+  "dataset": "heldout",
+  "fictional": true,
+  "description": "All organisations, people, prices and certificates in this dataset are fictional and created for software evaluation only.",
+  "workspace": {
+    "name": "Synthetic Heldout Workspace",
+    "slug": "synth-heldout"
+  },
+  "users": [
+    {
+      "email": "bench-admin@meridian.example",
+      "name": "Bench Admin",
+      "role": "admin",
+      "password": "BenchPass!2026"
+    },
+    {
+      "email": "bench-reviewer@meridian.example",
+      "name": "Bench Reviewer",
+      "role": "reviewer",
+      "password": "BenchPass!2026"
+    }
+  ],
+  "documents": [
+    {
+      "file": "helios_quote_v1.pdf",
+      "title": "Helios Valves quotation (original)",
+      "doc_type": "quote",
+      "doc_key": "helios-quote",
+      "primary_entity": "Helios Valves Inc",
+      "effective_date": "2025-05-20",
+      "valid_until": "2025-12-31",
+      "trust_level": 0.8
+    },
+    {
+      "file": "helios_quote_v2.pdf",
+      "title": "Helios Valves quotation (revision 2)",
+      "doc_type": "quote",
+      "doc_key": "helios-quote",
+      "primary_entity": "Helios Valves Inc",
+      "effective_date": "2025-08-10",
+      "valid_until": "2025-12-31",
+      "trust_level": 0.8
+    },
+    {
+      "file": "helios_contract.pdf",
+      "title": "Helios Valves supply agreement",
+      "doc_type": "contract",
+      "doc_key": "helios-contract",
+      "primary_entity": "Helios Valves Inc",
+      "effective_date": "2025-08-15",
+      "valid_until": null,
+      "trust_level": 0.9
+    },
+    {
+      "file": "helios_certificate.pdf",
+      "title": "Helios Valves ISO 9001 certificate",
+      "doc_type": "certificate",
+      "doc_key": "helios-certificate",
+      "primary_entity": "Helios Valves Inc",
+      "effective_date": "2024-03-01",
+      "valid_until": "2027-02-28",
+      "trust_level": 0.9
+    },
+    {
+      "file": "helios_quote_2024.pdf",
+      "title": "Helios Valves 2024 quotation (historical)",
+      "doc_type": "quote",
+      "doc_key": "helios-quote-2024",
+      "primary_entity": "Helios Valves Inc",
+      "effective_date": "2024-03-01",
+      "valid_until": "2024-12-31",
+      "trust_level": 0.7
+    },
+    {
+      "file": "kestrel_quote.docx",
+      "title": "Kestrel Fabrication quotation",
+      "doc_type": "quote",
+      "doc_key": "kestrel-quote",
+      "primary_entity": "Kestrel Fabrication Ltd",
+      "effective_date": "2025-06-01",
+      "valid_until": "2025-12-31",
+      "trust_level": 0.8
+    },
+    {
+      "file": "kestrel_contract.md",
+      "title": "Kestrel Fabrication supply agreement",
+      "doc_type": "contract",
+      "doc_key": "kestrel-contract",
+      "primary_entity": "Kestrel Fabrication Ltd",
+      "effective_date": "2025-06-20",
+      "valid_until": null,
+      "trust_level": 0.9
+    },
+    {
+      "file": "kestrel_certificate.pdf",
+      "title": "Kestrel Fabrication ISO 9001 certificate",
+      "doc_type": "certificate",
+      "doc_key": "kestrel-certificate",
+      "primary_entity": "Kestrel Fabrication Ltd",
+      "effective_date": "2022-11-01",
+      "valid_until": "2026-10-31",
+      "trust_level": 0.85
+    },
+    {
+      "file": "solstice_quote.pdf",
+      "title": "Solstice Pumps quotation",
+      "doc_type": "quote",
+      "doc_key": "solstice-quote",
+      "primary_entity": "Solstice Pumps GmbH",
+      "effective_date": "2025-06-15",
+      "valid_until": "2025-12-31",
+      "trust_level": 0.8
+    },
+    {
+      "file": "solstice_contract.pdf",
+      "title": "Solstice Pumps supply agreement",
+      "doc_type": "contract",
+      "doc_key": "solstice-contract",
+      "primary_entity": "Solstice Pumps GmbH",
+      "effective_date": "2025-06-28",
+      "valid_until": null,
+      "trust_level": 0.9
+    },
+    {
+      "file": "solstice_certificate.pdf",
+      "title": "Solstice Pumps ISO 9001 certificate",
+      "doc_type": "certificate",
+      "doc_key": "solstice-certificate",
+      "primary_entity": "Solstice Pumps GmbH",
+      "effective_date": "2022-03-01",
+      "valid_until": "2025-02-28",
+      "trust_level": 0.85
+    },
+    {
+      "file": "meridian_risk_register.csv",
+      "title": "Supplier risk register",
+      "doc_type": "risk_register",
+      "doc_key": "meridian-risk-register",
+      "primary_entity": null,
+      "effective_date": "2025-08-05",
+      "valid_until": null,
+      "trust_level": 0.85
+    },
+    {
+      "file": "meridian_schedule.xlsx",
+      "title": "North Grid milestone schedule",
+      "doc_type": "schedule",
+      "doc_key": "meridian-schedule",
+      "primary_entity": "North Grid Upgrade",
+      "effective_date": "2025-08-01",
+      "valid_until": null,
+      "trust_level": 0.8
+    },
+    {
+      "file": "meridian_status.md",
+      "title": "North Grid status note",
+      "doc_type": "technical_assessment",
+      "doc_key": "meridian-status",
+      "primary_entity": "North Grid Upgrade",
+      "effective_date": "2025-08-28",
+      "valid_until": null,
+      "trust_level": 0.8
+    },
+    {
+      "file": "meridian_budget.xlsx",
+      "title": "North Grid budget model",
+      "doc_type": "spreadsheet",
+      "doc_key": "meridian-budget",
+      "primary_entity": "North Grid Upgrade",
+      "effective_date": "2025-08-10",
+      "valid_until": null,
+      "trust_level": 0.75
+    },
+    {
+      "file": "asset_policy.md",
+      "title": "Asset Register Policy POL-OPS-011",
+      "doc_type": "policy",
+      "doc_key": "asset-policy",
+      "primary_entity": "Meridian Utilities Ltd",
+      "effective_date": "2024-06-01",
+      "valid_until": null,
+      "trust_level": 0.9
+    },
+    {
+      "file": "asset_attestation.eml",
+      "title": "H1 asset register attestation",
+      "doc_type": "email",
+      "doc_key": "asset-attestation",
+      "primary_entity": "Meridian Utilities Ltd",
+      "effective_date": "2025-08-22",
+      "valid_until": null,
+      "trust_level": 0.8
+    },
+    {
+      "file": "asset_review_record.md",
+      "title": "H1 asset register review record",
+      "doc_type": "decision_record",
+      "doc_key": "asset-review-record",
+      "primary_entity": "Meridian Utilities Ltd",
+      "effective_date": "2025-08-26",
+      "valid_until": null,
+      "trust_level": 0.85
+    },
+    {
+      "file": "helios_control_spec.md",
+      "title": "Control retrofit specification HC-14",
+      "doc_type": "spec",
+      "doc_key": "helios-control-spec",
+      "primary_entity": "Helios Control Retrofit HC-14",
+      "effective_date": "2025-08-01",
+      "valid_until": null,
+      "trust_level": 0.85
+    },
+    {
+      "file": "helios_control_assessment.md",
+      "title": "Control retrofit technical assessment HC-14",
+      "doc_type": "technical_assessment",
+      "doc_key": "helios-control-assessment",
+      "primary_entity": "Helios Control Retrofit HC-14",
+      "effective_date": "2025-08-12",
+      "valid_until": null,
+      "trust_level": 0.85
+    },
+    {
+      "file": "helios_change_risk.csv",
+      "title": "Control retrofit risk register HC-14",
+      "doc_type": "risk_register",
+      "doc_key": "helios-change-risk",
+      "primary_entity": null,
+      "effective_date": "2025-08-10",
+      "valid_until": null,
+      "trust_level": 0.8
+    }
+  ],
+  "decisions": [
+    {
+      "title": "Helios Valves supplier selection \u2014 North Grid",
+      "decision_type": "procurement",
+      "description": "Select a safety relief valve supplier. The revised Helios quotation and contract disagree on price, delivery and payment terms.",
+      "options": [
+        "Helios Valves Inc",
+        "Kestrel Fabrication Ltd"
+      ],
+      "documents": [
+        "helios-quote",
+        "helios-contract",
+        "helios-certificate",
+        "kestrel-quote",
+        "kestrel-certificate",
+        "meridian-risk-register"
+      ],
+      "as_of_date": "2025-09-01",
+      "actions": [
+        "evaluate",
+        "analysis"
+      ]
+    },
+    {
+      "title": "Kestrel Fabrication valve supply award",
+      "decision_type": "procurement",
+      "description": "Award safety relief valve supply to Kestrel Fabrication with fully current and consistent evidence.",
+      "options": [
+        "Kestrel Fabrication Ltd",
+        "Helios Valves Inc"
+      ],
+      "documents": [
+        "kestrel-quote",
+        "kestrel-contract",
+        "kestrel-certificate",
+        "helios-quote",
+        "helios-certificate",
+        "meridian-risk-register"
+      ],
+      "as_of_date": "2025-09-01",
+      "actions": [
+        "evaluate",
+        "analysis",
+        "attest",
+        "approve"
+      ]
+    },
+    {
+      "title": "Solstice Pumps valve supply award",
+      "decision_type": "procurement",
+      "description": "Consider Solstice Pumps based on a EUR quotation whose ISO 9001 certificate expired before the decision date.",
+      "options": [
+        "Solstice Pumps GmbH",
+        "Kestrel Fabrication Ltd"
+      ],
+      "documents": [
+        "solstice-quote",
+        "solstice-contract",
+        "solstice-certificate",
+        "kestrel-quote",
+        "kestrel-certificate",
+        "meridian-risk-register"
+      ],
+      "as_of_date": "2025-09-01",
+      "actions": [
+        "evaluate"
+      ]
+    },
+    {
+      "title": "North Grid milestone M2 release",
+      "decision_type": "project_approval",
+      "description": "Release milestone M2 for the North Grid upgrade. A current risk register is missing from the attached evidence.",
+      "options": [
+        "North Grid Upgrade"
+      ],
+      "documents": [
+        "meridian-schedule",
+        "meridian-status",
+        "meridian-budget"
+      ],
+      "as_of_date": "2025-09-01",
+      "actions": [
+        "evaluate"
+      ]
+    },
+    {
+      "title": "Asset register policy compliance review \u2014 H1 2025",
+      "decision_type": "policy_compliance",
+      "description": "Confirm H1 asset register compliance with POL-OPS-011 using the operations attestation and review record.",
+      "options": [
+        "Meridian Utilities Ltd"
+      ],
+      "documents": [
+        "asset-policy",
+        "asset-attestation",
+        "asset-review-record"
+      ],
+      "as_of_date": "2025-09-01",
+      "actions": [
+        "evaluate",
+        "analysis",
+        "attest"
+      ]
+    },
+    {
+      "title": "Control retrofit HC-14 engineering change",
+      "decision_type": "engineering_change",
+      "description": "Approve the North Grid control retrofit. The technical assessment reports lower efficiency than the specification.",
+      "options": [
+        "Helios Control Retrofit HC-14"
+      ],
+      "documents": [
+        "helios-control-spec",
+        "helios-control-assessment",
+        "helios-change-risk"
+      ],
+      "as_of_date": "2025-09-01",
+      "actions": [
+        "evaluate",
+        "analysis"
+      ]
+    }
+  ]
+}

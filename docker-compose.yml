@@ -1,0 +1,90 @@
+# Evidence-Graph AI Auditor — production-ish local stack.
+#
+#   docker compose up --build            # app on http://localhost:8000 (SQLite volume)
+#   docker compose --profile postgres up --build   # app + PostgreSQL/pgvector
+#
+# The SQLite profile needs nothing but Docker. The Postgres profile also starts a
+# pgvector-enabled database and points the app at it.
+name: evidence-graph-ai-auditor
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: evidence-graph-ai-auditor:local
+    container_name: ega-app
+    ports:
+      - "8000:8000"
+    environment:
+      EGA_ENVIRONMENT: ${EGA_ENVIRONMENT:-production}
+      EGA_LOG_LEVEL: ${EGA_LOG_LEVEL:-INFO}
+      # A secret is mandatory in production; generate one before first start.
+      EGA_SECRET_KEY: ${EGA_SECRET_KEY:?set EGA_SECRET_KEY in .env (python -c "import secrets;print(secrets.token_urlsafe(48))")}
+      EGA_SEED_DEMO_DATA: ${EGA_SEED_DEMO_DATA:-true}
+      EGA_ALLOW_LOCAL_PROVIDER_URLS: ${EGA_ALLOW_LOCAL_PROVIDER_URLS:-false}
+      EGA_API_RATE_LIMIT_PER_MINUTE: ${EGA_API_RATE_LIMIT_PER_MINUTE:-600}
+      EGA_JWT_TTL_MINUTES: ${EGA_JWT_TTL_MINUTES:-480}
+    volumes:
+      - ega-data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 40s
+
+  # Optional PostgreSQL + pgvector backend. Enable with --profile postgres.
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: ega-postgres
+    profiles: ["postgres"]
+    environment:
+      POSTGRES_USER: ega
+      POSTGRES_PASSWORD: ${EGA_POSTGRES_PASSWORD:-ega}
+      POSTGRES_DB: ega
+    ports:
+      - "5432:5432"
+    volumes:
+      - ega-pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ega -d ega"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  # Same image, wired to Postgres instead of SQLite. Use this service if you enabled
+  # the postgres profile:  docker compose --profile postgres up app-postgres
+  app-postgres:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: evidence-graph-ai-auditor:local
+    container_name: ega-app-postgres
+    profiles: ["postgres"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8001:8000"
+    environment:
+      EGA_ENVIRONMENT: ${EGA_ENVIRONMENT:-production}
+      EGA_SECRET_KEY: ${EGA_SECRET_KEY:?set EGA_SECRET_KEY in .env}
+      EGA_DATABASE_URL: postgresql+psycopg://ega:${EGA_POSTGRES_PASSWORD:-ega}@postgres:5432/ega
+      EGA_SEED_DEMO_DATA: ${EGA_SEED_DEMO_DATA:-true}
+      EGA_SERVE_FRONTEND: "true"
+    volumes:
+      - ega-data-pg:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  ega-data:
+  ega-pg:
+  ega-data-pg:

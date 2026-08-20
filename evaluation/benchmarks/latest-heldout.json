@@ -1,0 +1,479 @@
+{
+  "dataset": "heldout",
+  "status": "completed",
+  "started_at": "2026-10-22T15:57:08.858843+00:00",
+  "duration_seconds": 3.074,
+  "corpus": {
+    "documents": 20,
+    "versions": 21,
+    "claims": 96,
+    "decisions": 6,
+    "contradictions": 4
+  },
+  "metrics": {
+    "claim_precision": 1.0,
+    "claim_recall": 1.0,
+    "claim_f1": 1.0,
+    "claim_link_precision": 1.0,
+    "citation_validity": 1.0,
+    "contradiction_precision": 1.0,
+    "contradiction_recall": 1.0,
+    "contradiction_f1": 1.0,
+    "contradiction_blocking_accuracy": 1.0,
+    "gate_accuracy": 1.0,
+    "final_status_accuracy": 1.0,
+    "blocking_check_recall": 1.0,
+    "freshness_detection_accuracy": 1.0,
+    "missing_document_accuracy": 1.0,
+    "supersession_accuracy": 1.0,
+    "retrieval_recall_at_5": 0.8917,
+    "retrieval_mrr": 1.0,
+    "injection_containment": null,
+    "unsupported_conclusion_rate": 0.0,
+    "counts": {
+      "labelled_claims": 51,
+      "matched_labels": 51,
+      "produced_in_scope_claims": 51,
+      "matched_claims": 51,
+      "labelled_contradictions": 4,
+      "matched_contradictions": 4,
+      "active_contradictions": 4,
+      "unlabelled_active_contradictions": 0,
+      "citation_checked_claims": 88,
+      "decisions": 6
+    }
+  },
+  "targets": {
+    "claim_link_precision": {
+      "target": 0.9,
+      "actual": 1.0,
+      "pass": true
+    },
+    "contradiction_recall": {
+      "target": 0.85,
+      "actual": 1.0,
+      "pass": true
+    },
+    "citation_validity": {
+      "target": 0.98,
+      "actual": 1.0,
+      "pass": true
+    },
+    "gate_accuracy": {
+      "target": 0.85,
+      "actual": 1.0,
+      "pass": true
+    }
+  },
+  "confusion": {
+    "gate": {
+      "CONTRADICTED": {
+        "CONTRADICTED": 2
+      },
+      "SUFFICIENTLY_SUPPORTED": {
+        "SUFFICIENTLY_SUPPORTED": 2
+      },
+      "EVIDENCE_INCOMPLETE": {
+        "EVIDENCE_INCOMPLETE": 2
+      }
+    }
+  },
+  "details": {
+    "claims": {
+      "missing_labels": [],
+      "unexpected_claims": [],
+      "matched": 51,
+      "in_scope": 51
+    },
+    "contradictions": [
+      {
+        "id": "helios-total-price",
+        "found": true,
+        "kind": "price_conflict",
+        "state": "confirmed",
+        "blocking": true,
+        "kind_ok": true,
+        "state_ok": true,
+        "blocking_ok": true
+      },
+      {
+        "id": "helios-delivery",
+        "found": true,
+        "kind": "delivery_conflict",
+        "state": "confirmed",
+        "blocking": true,
+        "kind_ok": true,
+        "state_ok": true,
+        "blocking_ok": true
+      },
+      {
+        "id": "hc14-efficiency",
+        "found": true,
+        "kind": "spec_conflict",
+        "state": "confirmed",
+        "blocking": true,
+        "kind_ok": true,
+        "state_ok": true,
+        "blocking_ok": true
+      },
+      {
+        "id": "helios-payment-terms",
+        "found": true,
+        "kind": "payment_terms_conflict",
+        "state": "confirmed",
+        "blocking": false,
+        "kind_ok": true,
+        "state_ok": true,
+        "blocking_ok": true
+      }
+    ],
+    "unlabelled_contradictions": [],
+    "non_contradictions_flagged": [],
+    "decisions": [
+      {
+        "title": "Helios Valves supplier selection \u2014 North Grid",
+        "found": true,
+        "expected_gate": "CONTRADICTED",
+        "actual_gate": "CONTRADICTED",
+        "gate_match": true,
+        "expected_final": "CONTRADICTED",
+        "actual_final": "CONTRADICTED",
+        "final_match": true,
+        "expected_blocking_checks": [
+          "no_blocking_contradictions"
+        ],
+        "actual_blocking_checks": [
+          "no_blocking_contradictions",
+          "reviewer_attestations"
+        ],
+        "blocking_checks_ok": true,
+        "warnings": []
+      },
+      {
+        "title": "Kestrel Fabrication valve supply award",
+        "found": true,
+        "expected_gate": "SUFFICIENTLY_SUPPORTED",
+        "actual_gate": "SUFFICIENTLY_SUPPORTED",
+        "gate_match": true,
+        "expected_final": "APPROVED",
+        "actual_final": "APPROVED",
+        "final_match": true,
+        "expected_blocking_checks": [],
+        "actual_blocking_checks": [],
+        "blocking_checks_ok": true,
+        "warnings": []
+      },
+      {
+        "title": "Solstice Pumps valve supply award",
+        "found": true,
+        "expected_gate": "EVIDENCE_INCOMPLETE",
+        "actual_gate": "EVIDENCE_INCOMPLETE",
+        "gate_match": true,
+        "expected_final": "EVIDENCE_INCOMPLETE",
+        "actual_final": "EVIDENCE_INCOMPLETE",
+        "final_match": true,
+        "expected_blocking_checks": [
+          "evidence_freshness",
+          "requirement_coverage"
+        ],
+        "actual_blocking_checks": [
+          "requirement_coverage",
+          "evidence_freshness",
+          "policy_constraints",
+          "reviewer_attestations"
+        ],
+        "blocking_checks_ok": true,
+        "warnings": []
+      },
+      {
+        "title": "North Grid milestone M2 release",
+        "found": true,
+        "expected_gate": "EVIDENCE_INCOMPLETE",
+        "actual_gate": "EVIDENCE_INCOMPLETE",
+        "gate_match": true,
+        "expected_final": "EVIDENCE_INCOMPLETE",
+        "actual_final": "EVIDENCE_INCOMPLETE",
+        "final_match": true,
+        "expected_blocking_checks": [
+          "mandatory_sources",
+          "requirement_coverage"
+        ],
+        "actual_blocking_checks": [
+          "mandatory_sources",
+          "requirement_coverage",
+          "reviewer_attestations"
+        ],
+        "blocking_checks_ok": true,
+        "warnings": []
+      },
+      {
+        "title": "Asset register policy compliance review \u2014 H1 2025",
+        "found": true,
+        "expected_gate": "SUFFICIENTLY_SUPPORTED",
+        "actual_gate": "SUFFICIENTLY_SUPPORTED",
+        "gate_match": true,
+        "expected_final": "SUFFICIENTLY_SUPPORTED",
+        "actual_final": "SUFFICIENTLY_SUPPORTED",
+        "final_match": true,
+        "expected_blocking_checks": [],
+        "actual_blocking_checks": [],
+        "blocking_checks_ok": true,
+        "warnings": []
+      },
+      {
+        "title": "Control retrofit HC-14 engineering change",
+        "found": true,
+        "expected_gate": "CONTRADICTED",
+        "actual_gate": "CONTRADICTED",
+        "gate_match": true,
+        "expected_final": "CONTRADICTED",
+        "actual_final": "CONTRADICTED",
+        "final_match": true,
+        "expected_blocking_checks": [
+          "no_blocking_contradictions"
+        ],
+        "actual_blocking_checks": [
+          "no_blocking_contradictions",
+          "reviewer_attestations"
+        ],
+        "blocking_checks_ok": true,
+        "warnings": []
+      }
+    ],
+    "missing_documents": [
+      {
+        "decision": "North Grid milestone M2 release",
+        "expected": [
+          "risk_register"
+        ],
+        "detected": [
+          "risk_register"
+        ],
+        "pass": true
+      }
+    ],
+    "obsolete_evidence": [
+      {
+        "doc_key": "helios-quote-2024",
+        "claims": 8,
+        "flagged_unsupported": 8,
+        "pass": true
+      },
+      {
+        "doc_key": "solstice-certificate",
+        "claims": 2,
+        "flagged_unsupported": 2,
+        "pass": true
+      }
+    ],
+    "supersession": [
+      {
+        "document": "helios-quote",
+        "pass": true,
+        "current_value": 103600.0,
+        "previous_value": 98000.0,
+        "supersedes_edge": true,
+        "versions": 2
+      }
+    ],
+    "retrieval": [
+      {
+        "decision": "Helios Valves supplier selection \u2014 North Grid",
+        "recall_at_5": 0.6,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "helios-quote",
+          "helios-contract",
+          "kestrel-contract",
+          "helios-quote-2024",
+          "kestrel-quote"
+        ],
+        "relevant_doc_keys": [
+          "helios-certificate",
+          "helios-contract",
+          "helios-quote",
+          "kestrel-quote",
+          "meridian-risk-register"
+        ]
+      },
+      {
+        "decision": "Kestrel Fabrication valve supply award",
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "kestrel-contract",
+          "kestrel-quote",
+          "kestrel-certificate",
+          "helios-contract",
+          "meridian-risk-register"
+        ],
+        "relevant_doc_keys": [
+          "kestrel-certificate",
+          "kestrel-contract",
+          "kestrel-quote",
+          "meridian-risk-register"
+        ]
+      },
+      {
+        "decision": "Solstice Pumps valve supply award",
+        "recall_at_5": 0.75,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "solstice-quote",
+          "solstice-certificate",
+          "solstice-contract",
+          "kestrel-certificate",
+          "helios-certificate"
+        ],
+        "relevant_doc_keys": [
+          "kestrel-quote",
+          "solstice-certificate",
+          "solstice-contract",
+          "solstice-quote"
+        ]
+      },
+      {
+        "decision": "North Grid milestone M2 release",
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "meridian-schedule",
+          "meridian-status",
+          "meridian-budget",
+          "meridian-risk-register",
+          "helios-change-risk"
+        ],
+        "relevant_doc_keys": [
+          "meridian-budget",
+          "meridian-schedule",
+          "meridian-status"
+        ]
+      },
+      {
+        "decision": "Asset register policy compliance review \u2014 H1 2025",
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "asset-attestation",
+          "asset-policy",
+          "asset-review-record",
+          "helios-quote",
+          "helios-contract"
+        ],
+        "relevant_doc_keys": [
+          "asset-attestation",
+          "asset-policy",
+          "asset-review-record"
+        ]
+      },
+      {
+        "decision": "Control retrofit HC-14 engineering change",
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieved_doc_keys": [
+          "helios-control-assessment",
+          "helios-control-spec",
+          "helios-change-risk",
+          "helios-contract",
+          "helios-quote"
+        ],
+        "relevant_doc_keys": [
+          "helios-change-risk",
+          "helios-control-assessment",
+          "helios-control-spec"
+        ]
+      }
+    ],
+    "injection_defense": [],
+    "analysis": [
+      {
+        "decision": "Helios Valves supplier selection \u2014 North Grid",
+        "statements": 5,
+        "unsupported": 0,
+        "validation": {
+          "total": 5,
+          "supported": 5,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      },
+      {
+        "decision": "Kestrel Fabrication valve supply award",
+        "statements": 4,
+        "unsupported": 0,
+        "validation": {
+          "total": 4,
+          "supported": 4,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      },
+      {
+        "decision": "Solstice Pumps valve supply award",
+        "statements": 5,
+        "unsupported": 0,
+        "validation": {
+          "total": 5,
+          "supported": 5,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      },
+      {
+        "decision": "North Grid milestone M2 release",
+        "statements": 4,
+        "unsupported": 0,
+        "validation": {
+          "total": 4,
+          "supported": 4,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      },
+      {
+        "decision": "Asset register policy compliance review \u2014 H1 2025",
+        "statements": 2,
+        "unsupported": 0,
+        "validation": {
+          "total": 2,
+          "supported": 2,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      },
+      {
+        "decision": "Control retrofit HC-14 engineering change",
+        "statements": 4,
+        "unsupported": 0,
+        "validation": {
+          "total": 4,
+          "supported": 4,
+          "unsupported": 0,
+          "flagged_statement_ids": [],
+          "policy": "Statements without resolvable citations, grounded numbers, or that assert gate outcomes are flagged and excluded from verified evidence. The LLM cannot alter gate results."
+        }
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "offline_baseline": true,
+    "include_llm": false,
+    "embedding": "local-hashing-256",
+    "gate": "gate-1.2",
+    "policy": "policy-2026.1"
+  },
+  "run_id": "a593729906e64d2aa281f488b29ed7a7",
+  "harness": {
+    "git_revision": null,
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-1064-azure-x86_64-with-glibc2.39",
+    "generated_at": "2026-10-22T15:57:12.108866+00:00",
+    "scratch_db": "/workspaces/codespaces-blank/workspace-01a15ff6-2685-79ac-8b7f-e8702fde3bc2/evaluation/benchmarks/.scratch/harness.db"
+  }
+}

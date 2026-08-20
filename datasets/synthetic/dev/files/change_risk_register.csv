@@ -1,0 +1,2 @@
+Change,Risk Level,Assessment Date,Owner,Mitigation
+EC-2025-14,Medium,2025-08-18,S. Raman,Staged rollout with rollback image retained

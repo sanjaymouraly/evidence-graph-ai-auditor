@@ -1,0 +1,5 @@
+Risk ID,Supplier,Risk Level,Assessment Date,Owner,Mitigation
+R-01,Apex Systems Pvt Ltd,Medium,2025-07-05,P. Nair,Dual sourcing option reviewed
+R-02,Borealis Industrial GmbH,High,2025-07-05,P. Nair,Escrow of spare parts and standby service
+R-03,Cascade Pumps Ltd,Low,2025-07-08,P. Nair,Standard warranty and performance bond
+R-04,Delta Motion Systems,Medium,2025-07-08,P. Nair,Performance bond and quarterly review

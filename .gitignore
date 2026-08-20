@@ -1,0 +1,49 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# ---- Local runtime state (DB, uploads, generated reports, auto-generated dev secret) ----
+backend/data/
+
+# ---- Node / Next.js ----
+node_modules/
+/node_modules
+frontend/.next/
+frontend/out/
+frontend/tsconfig.tsbuildinfo
+frontend/test-results/
+frontend/playwright-report/
+frontend/.playwright/
+
+# ---- Benchmark scratch (results in evaluation/benchmarks/*.json are committed) ----
+evaluation/benchmarks/.scratch/
+
+# ---- Secrets & local config ----
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local caches and generated files
+*.db
+*.sqlite3
+dist/
+build/
+coverage/
+htmlcov/
+*.log
+CHANGELOG.md
